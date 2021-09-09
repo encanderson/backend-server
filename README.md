@@ -2,7 +2,7 @@
 
 ## Overview
 
-<div style="text-align: justify" dir='rtl'>
+<div style="text-align: justify">
 
 A jornada em busca do conhecimento percorre uma estrada sem fim, quanto mais estudamos, percebemos que devemos seguir adiante atento às novidades que surgem todos os dias.
 
