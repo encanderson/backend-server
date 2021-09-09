@@ -31,7 +31,7 @@ Neste projetos apresento alguns elementos essencias no meio de tantos outros, s�
 
 3. Python, como uma das possibilidades para o desenvvolvimento de apis (um próxima etapa será um aprofundamento de no Node.Js);
 
-4. FastAPI, uma framework na linguagem Python, uma alternativa incrível;
+4. FastAPI, um framework na linguagem Python, uma alternativa incrível;
 
 5. MongoDB, um dos mais populares banco de dados no momento;
 
