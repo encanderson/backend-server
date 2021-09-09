@@ -10,18 +10,18 @@ services:
       - 443:443
 
   mongo:
-    image: mongo
+    build: ./database/mongo
     restart: unless-stopped
     container_name: mongo
     ports:
       - 27017:27017
     env_file:
-      - .env
+      - ./database/.env
     environment:
       MONGO_INITDB_ROOT_USERNAME: MONGO_USER_ROOT
-      MONGO_INITDB_ROOT_PASSWORD: MONGO_USER_ROOT
+      MONGO_INITDB_ROOT_PASSWORD: MONGO_USER_PASSWORD
     volumes:
-      - ./database/mongodb:/data/db
+      - ./database/mongo:/data/db
   
   orisistem:
     build: ./auth
