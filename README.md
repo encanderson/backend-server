@@ -2,7 +2,7 @@
 
 ## Overview
 
-<div style="text-align: justify">
+<p style="text-align: justify">
 
 A jornada em busca do conhecimento percorre uma estrada sem fim, quanto mais estudamos, percebemos que devemos seguir adiante atento às novidades que surgem todos os dias.
 
@@ -17,11 +17,11 @@ Decidi encarar dois desafios, encarar o desenvolvimento web, principalmente o de
 Por onde começar? Afinal são diversos termos, linguagens, códigos, é preciso começar. Nada melhor, portanto, de um guia para aos poucos irmos em busca da excelência. Para isso, indico um roadmap como o encontrado <a href="https://roadmap.sh/backend" target="_blank">aqui</a>, uma guia com os diversos conceitos, linguagens e tecnologias que devemos analisar.
 
 Umas das melhores práticas de aprenizagem é compatilhar a construção dos nossos conhecimentos para trocarmos ideias com quem está a uns passos em nossas frente ou a uns passos atrás.
-</div>
+</p>
 
 ## Tópicos Chaves
 
-<div style="text-align: justify">
+<p style="text-align: justify">
 
 Neste projetos apresento alguns elementos essencias no meio de tantos outros, são eles:
 
@@ -36,4 +36,4 @@ Neste projetos apresento alguns elementos essencias no meio de tantos outros, s�
 5. MongoDB, um dos mais populares banco de dados no momento;
 
 6. Conceitos de segurança, como Json Web Token (jwt).
-</div>
+</p>
