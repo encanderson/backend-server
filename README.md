@@ -2,6 +2,7 @@
 
 ## Overview
 
+dir='rtl'
 <div style="text-align: justify">
 
 A jornada em busca do conhecimento percorre uma estrada sem fim, quanto mais estudamos, percebemos que devemos seguir adiante atento às novidades que surgem todos os dias.
@@ -37,3 +38,4 @@ Neste projetos apresento alguns elementos essencias no meio de tantos outros, s�
 
 6. Conceitos de segurança, como Json Web Token (jwt).
 </div>
+dir='rtl'
