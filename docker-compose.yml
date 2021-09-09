@@ -8,6 +8,18 @@ services:
     ports:
       - 80:80
       - 443:443
+  
+  orisistem:
+    build: ./auth
+    container_name: auth
+    restart: unless-stopped
+    command: gunicorn --bind 0.0.0.0:5000 -w 3 main:app
+    ports:
+      - 5000:5000
+    env_file:
+      - ./app/.env
+    volumes:
+      - ./app:/oriapp/app
 
 networks:
   default:
