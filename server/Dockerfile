@@ -14,4 +14,6 @@ STOPSIGNAL SIGTERM
 
 WORKDIR /oriapp
 
+COPY ./sites-enabled/ /etc/nginx/sites-enabled
+
 CMD ["nginx", "-g", "daemon off;"]
