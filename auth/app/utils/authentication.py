@@ -61,3 +61,15 @@ class Authentication(Bcrypt):
                 'confirmEmail': True
             }
         })
+    
+    async def change_password(self, form):
+        password = form.get('password')
+        email = form.get('email')
+        hash_password = self.generate_hash_password(password)
+        db.update('users', {
+            'email': email
+        }, {
+            '$set': {
+                'password': hash_password
+            }
+        })

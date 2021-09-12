@@ -36,5 +36,5 @@ async def send_confirm_email(form, background):
         return JSONResponse(status_code=HTTP_200_OK,
                             content={
                                 'status': False,
-                                "message": "Problemas na confirma do seu email, por favor, tente novamente."
+                                "message": "Problemas na confirmação do seu email, por favor, tente novamente."
                             })
