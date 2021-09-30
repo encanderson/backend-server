@@ -1,39 +1,58 @@
 # Backend Developer
 
-## Overview
+## Table of Content
+
+1. [Overview](#overview)
+2. [Project Structure](#proejct-structure)
+    - 2.1. [Nginx Reverse Proxy](#nginx-reverse-proxy)
+
+### Overview
 
 <div style="text-align: justify">
 
-A jornada em busca do conhecimento percorre uma estrada sem fim, quanto mais estudamos, percebemos que devemos seguir adiante atento às novidades que surgem todos os dias.
+The journey of knowledge is an endless path, we never stop. More than two years ago (August, 2019), I started learn about software development, since then I keep my journey.
 
-Em meio a um curso de mestrado, Engenharia da Energia Solar, em Portugal, tive a oportunidade de iniciar a jornada no mundo da programação, o que começou a partir de um trabalho acadêmico, utilizando a ferramente MatLab, abriu o caminho para o desenvolvimento do trabalho de dissertação.
+In my Master's, Solar Energy Engineering, I have the opportunity to develop software to simulate a photovoltaic energy system. I loved an experience, especially when I first meet the Python language, that blow my mind.
 
-A proposta lançada para a dissertação foi o desenvolvimento de um software para otimizar o dimensionamento de sistemas fotovotlaicos. Desafion lançado, era hora de dividir os estudos entre os assuntos relacionados ao tema energia e o aprendizado de programação, de desenvolvimento de software. Em um determinado ponto "surgiu" a linguagen Python, uma linguagem open source e com uma comunidade incrível, com diversas livrarias disponíveis e muita disposição para ajudar.
+The proposal to my final project was the development in the Python language. My time was divided in learn about solar energy and software development.
 
-Python, um caso de amor à primeira vista, pois ficava claro o imenso mundo de possibildidades, tanto para satisfazer meu trabalho acadêmico, como a vida profissional.
+How you know, Python is a general-purpose language, we can develop web applications, data processing, machine learning and so on.
 
-Decidi encarar dois desafios, encarar o desenvolvimento web, principalmente o desenvolvimento backend e em um futuro pŕoximo, quando as habilidades já estiverem mais solificadas, o encantador mundo de Data Analisys.
+I started with web development with Flask to serve the front-end with Jinja template and apis. Recently, I change my first choice to develop apis with the FastAPI, "a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints".
 
-Por onde começar? Afinal são diversos termos, linguagens, códigos, é preciso começar. Nada melhor, portanto, de um guia para aos poucos irmos em busca da excelência. Para isso, indico um roadmap como o encontrado <a href="https://roadmap.sh/backend" target="_blank">aqui</a>, uma guia com os diversos conceitos, linguagens e tecnologias que devemos analisar.
+This project is my first contribution in the devs community, I hope don't stop
 
-Umas das melhores práticas de aprenizagem é compatilhar a construção dos nossos conhecimentos para trocarmos ideias com quem está a uns passos em nossas frente ou a uns passos atrás.
+In my goals, I follow the back-end <a href="https://roadmap.sh/backend" target="_blank">back-end</a> roadmap.
+
+In this project we can analyze how the basic structure of an Nginx proxy server, the MongoDB database and an API with a flow to register user, password recovery and login. The system design is strucutured in microservices, in this case the system have three services, three Docker Containers.
+
+### Documentation
+
+* [Python 3.8.10](https://docs.python.org/release/3.8.10/){:target="_blank"}
+* [Nginx](http://nginx.org/en/docs/)
+* [MongoDB](https://docs.mongodb.com/manual/)
+* [FastAPI](https://fastapi.tiangolo.com)
+* [Docker](https://docs.docker.com)
+
+### Next steps
+
+* Testing:
+   - Integration;
+   - Unit tsting;
+   - Functional testing;
+* CI/CD;
+* Logs;
+* Web Sockets
+* Keep learning. 
+
+
 </div>
 
-## Tópicos Chaves
+## Project Structure
+
+### Nginx Reverse Proxy
 
 <div style="text-align: justify">
 
-Neste projetos apresento alguns elementos essencias no meio de tantos outros, são eles:
 
-1. A arquitetura de Microsserviços - Docker container;
-
-2. Nginx como servidor proxy reverso;
-
-3. Python, como uma das possibilidades para o desenvvolvimento de apis (um próxima etapa será um aprofundamento de no Node.Js);
-
-4. FastAPI, um framework na linguagem Python, uma alternativa incrível;
-
-5. MongoDB, um dos mais populares banco de dados no momento;
-
-6. Conceitos de segurança, como Json Web Token (jwt).
 </div>
