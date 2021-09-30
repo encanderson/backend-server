@@ -28,7 +28,7 @@ In this project we can analyze how the basic structure of an Nginx proxy server,
 
 ### Documentation
 
-* [Python 3.8.10](https://docs.python.org/release/3.8.10/){:target="_blank"}
+* [Python 3.8.10](https://docs.python.org/release/3.8.10/)
 * [Nginx](http://nginx.org/en/docs/)
 * [MongoDB](https://docs.mongodb.com/manual/)
 * [FastAPI](https://fastapi.tiangolo.com)
@@ -41,6 +41,7 @@ In this project we can analyze how the basic structure of an Nginx proxy server,
    - Unit tsting;
    - Functional testing;
 * CI/CD;
+   - Github Actions.
 * Logs;
 * Web Sockets
 * Keep learning. 
@@ -52,7 +53,36 @@ In this project we can analyze how the basic structure of an Nginx proxy server,
 
 ### Nginx Reverse Proxy
 
-<div style="text-align: justify">
+The microservice reverse proxy is the responsibility of the nginx container (called server). The docker container is made with an Ubuntu 18.04 image. I chose this image because of its compatibility with cerbot to manage the SSL certificates.
+
+The basic structure to run the functionality Nginx:
+
+* Directory sites-enabled to load the apps;
+* mine.types;
+* nginx.conf;
+* proxy_params.
+
+With Nginx we can redirect the clients requests to apropriete container.
+
+The external link is made just by Nginx.
+
+The structure tree is like:
 
 
+<div align="center">
+    <kbd>
+        <img src="./static/nginx.png"
+        alt="chat-react-node.js"
+        style="float: center; margin-right: 10px; align="center" />
+    </kbd>
 </div>
+
+##
+
+Checkout the file in:
+
+> ./server/sites-enabled/auth.conf
+
+The image was built according to the Dockerfile:
+
+> ./server/Dockerfile
