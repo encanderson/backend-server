@@ -1,7 +1,14 @@
 from hashlib import sha256
-import datetime
 from app.config import settings
+from random import randint
+import datetime
 import jwt
+
+
+def access_cod(n):
+    range_start = 10 ** (n - 1)
+    range_end = (10 ** n) - 1
+    return str(randint(range_start, range_end))
 
 
 def hashFunction(data):

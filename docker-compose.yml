@@ -12,28 +12,28 @@ services:
   mongo:
     build: ./database/mongo
     restart: unless-stopped
-    container_name: mongo
+    container_name: mongodb
     ports:
       - 27017:27017
     env_file:
-      - .env
+      - ./database/mongo/.env
     environment:
       MONGO_INITDB_ROOT_USERNAME: MONGO_USER_ROOT
       MONGO_INITDB_ROOT_PASSWORD: MONGO_USER_PASSWORD
     volumes:
-      - ./database/mongo:/data/db
+      - ./database/mongo/db:/data/db
   
   orisistem:
     build: ./auth
-    container_name: auth
+    container_name: authentication
     restart: unless-stopped
-    command: gunicorn --bind 0.0.0.0:5000 -w 3 main:app
+    command: uvicorn main:app --port 5000 --host 0.0.0.0
     ports:
       - 5000:5000
     env_file:
-      - ./app/.env
+      - ./auth/app/.env
     volumes:
-      - ./app:/oriapp/app
+      - ./auth/app:/oriapp/app
 
 networks:
   default:

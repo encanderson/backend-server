@@ -10,7 +10,7 @@ load_dotenv()
 class Settings(BaseSettings):
     SECRET_KEY: str = os.getenv('SECRET_KEY')
     # List urls
-    BACKEND_CORS_ORIGINS: List[AnyHttpUrl] = ["*"]
+    BACKEND_CORS_ORIGINS: List[AnyHttpUrl] = ["http://localhost:3000"]
     PROJECT_NAME: str = "API - Register and Authentication"
     SERVER_NAME: str = os.getenv('SERVER_NAME')
     URL: str = os.getenv('URL')
