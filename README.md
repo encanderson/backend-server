@@ -134,5 +134,5 @@ To run this project is necessary to install <a href="https://docs.docker.com/get
 </p>
 
 <p style="text-align: justify;">
-After you clone this project, cd back-end and run "docker-compose up -d".
+After you clone this project, cd backend-server and run "docker-compose up -d".
 </p>
